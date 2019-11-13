@@ -23,7 +23,6 @@ module('lazy engine loading', function(hooks) {
     );
     this.owner.register('template:application', hbs`{{outlet}}`);
     this.owner.register('controller:application', Controller.extend());
-    debugger;
     AppRouter.map(function() {
       this.mount('blog');
     });
